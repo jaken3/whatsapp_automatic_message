@@ -44,6 +44,7 @@ module.exports = {
     "|",
   ),
 
+  //Rutas de archivos multimedia y directorios
   PATHS: {
     AUTH: path.join(process.cwd(), "auth_info_baileys"),
     IMAGES: path.join(process.cwd(), "images"),

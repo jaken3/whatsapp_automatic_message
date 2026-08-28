@@ -23,9 +23,9 @@ async function createWhatsAppSocket(config, onOpen, onClose) {
   const sock = makeWASocket({
     version,
     auth: state,
-    logger: pino({ level: "silent" }),
+    logger: pino({ quiet: "true" }),
     printQRInTerminal: false,
-    browser: Browsers.ubuntu("Desktop")
+    browser: Browsers.ubuntu("Desktop"),
   });
 
   const contactsStore = {};
